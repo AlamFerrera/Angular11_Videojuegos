@@ -2,20 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
-import {GaugeModule} from 'angular-gauge';
+//import {GaugeModule} from 'angular-gauge';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
-import {MatFormField} from '@angular/material/form-field';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { SearchBarComponent } from './componentes/search-bar/search-bar.component';
+
+import { AppComponent } from './app.component';
+import { HomeComponent } from './componentes/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchBarComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,10 +28,10 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    GaugeModule,
+   // GaugeModule,
     MatTabsModule,
     MatIconModule,
-    MatFormField,
+    MatFormFieldModule,
     MatSelectModule
   ],
   providers: [],

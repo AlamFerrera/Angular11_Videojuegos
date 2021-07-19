@@ -1,0 +1,31 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Ordenar</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img src="https://i1.wp.com/angularscript.com/wp-content/uploads/2015/05/Simple-Radial-Gauge-with-AngularJS-and-SVG.jpg?fit=842%2C540&ssl=1"
+           alt="thumbnail" class="game-thumbnail">
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img src="https://images.idgesg.net/images/article/2019/10/cso_binary_code_inspection_magnifying_lens_by_andreus_gettyimages-1128503636_2400x1600-100813840-large.jpg"
+             class="game-platform" alt="slug">
+      </div>
+
+    </div>
+  </div>
+</div>
