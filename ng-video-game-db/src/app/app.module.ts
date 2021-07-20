@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
-//import {GaugeModule} from 'angular-gauge';
+import {GaugeModule} from 'angular-gauge';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -17,12 +17,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
+import { DetailsComponent } from './componentes/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     HomeComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-   // GaugeModule,
+    GaugeModule.forRoot(),
     MatTabsModule,
     MatIconModule,
     MatFormFieldModule,
