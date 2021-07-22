@@ -57,4 +57,26 @@
     position: relative;
     top: -200px;
   }
+
+  &-header{
+    &-title{
+      font-size: 70px;
+      color: #FFF;
+      font-weight: 700;
+      line-height: 70px;
+      white-space: nowrap;
+    }
+
+    &-release-date{
+      color: #FFF;
+      font-weight: 700;
+    }
+
+    &-genres{
+      color: #FFF;
+      font-weight: 700;
+    }
+  }
+
+
 }
